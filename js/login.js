@@ -59,7 +59,6 @@ function toggle() {
     }
 }
 
-
 const registerForm = document.getElementById("registerForm");
 
 if (registerForm) {
