@@ -55,11 +55,11 @@ function toggle() {
     }
     else {
         passwordElement.type = "password";
-        toggleElement.src = "unhide.png";
+        toggleElement.src = "./../images/unhide.png";
     }
 }
 
- 
+
 const registerForm = document.getElementById("registerForm");
 
 if (registerForm) {
@@ -85,7 +85,7 @@ if (registerForm) {
         }
         else {
             passwordElement.type = "password";
-            toggleElement.src = "unhide.png";
+            toggleElement.src = "./../images/unhide.png";
         }
 
     }
