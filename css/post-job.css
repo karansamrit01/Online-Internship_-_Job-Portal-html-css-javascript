@@ -11,12 +11,32 @@ body {
 
 /* Navbar */
 
-.navbar{
+/* .navbar{
 background:#2c3e50;
 color:white;
 padding: 12px;
 display:flex;
 align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+} */
+
+.navbar{
+background:#2c3e50;
+color:white;
+padding:12px 30px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+
+box-shadow:0 2px 10px rgba(0,0,0,0.15);
 }
 
 .nav-logo {
@@ -111,6 +131,7 @@ border:1px solid #555;
 .container {
     width: 90%;
     margin: 30px auto;
+      padding-top: 100px;
 }
 
 input, textarea, select {
@@ -271,5 +292,223 @@ button {
     border-radius: 30%;
     border: 1px solid white;
 
+
+}
+
+/* ================= Small Mobile ================= */
+
+@media (max-width:480px){
+
+/* ===== Navbar ===== */
+
+.navbar{
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 10px;
+}
+
+.nav-logo{
+width:45px;
+height:45px;
+margin-bottom:5px;
+}
+
+.nav-name{
+font-size:18px;
+margin:5px 0;
+}
+
+.menu{
+flex-direction: column;
+gap:8px;
+margin-top:8px;
+}
+
+.menu a{
+font-size:14px;
+padding:5px 8px;
+}
+
+.nav-clock{
+margin-top:5px;
+}
+
+/* ===== Gallery ===== */
+
+.main-img{
+width:200px;
+height:200px;
+}
+
+.btn-slide{
+width:35px;
+height:35px;
+font-size:25px;
+}
+
+.preview-img{
+width:60px;
+height:60px;
+}
+
+/* ===== Footer ===== */
+
+.footer-container{
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.footer-box{
+width:100%;
+margin-bottom:20px;
+}
+
+.footer-heading{
+font-size:20px;
+}
+
+.quick-links{
+justify-content:center;
+}
+
+.footer-box ul{
+padding:0;
+}
+
+.footer-box a{
+display:block;
+margin:5px 0;
+}
+
+.footer-icon{
+margin-right:5px;
+}
+
+}
+/* ================= Mobile ================= */
+
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+.menu{
+flex-direction:column;
+gap:10px;
+margin-top:10px;
+}
+
+.menu a{
+font-size:15px;
+}
+
+.nav-clock{
+margin-top:5px;
+}
+
+.container{
+width:95%;
+}
+
+.main-img{
+width:250px;
+height:250px;
+}
+
+.preview-img{
+width:70px;
+height:70px;
+}
+
+.gallery-preview{
+width:95%;
+}
+
+.footer-container{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+.footer-box{
+width:100%;
+margin-bottom:25px;
+}
+
+}
+/* ================= Tablet ================= */
+
+@media (max-width:1024px){
+
+.navbar{
+flex-wrap:wrap;
+}
+
+.nav-name{
+font-size:22px;
+}
+
+.menu{
+gap:15px;
+flex-wrap:wrap;
+}
+
+.menu a{
+font-size:16px;
+}
+
+.main-img{
+width:300px;
+height:300px;
+}
+
+.preview-img{
+width:80px;
+height:80px;
+}
+
+.gallery-preview{
+width:90%;
+}
+
+.footer-container{
+justify-content:space-between;
+}
+
+.footer-box{
+width:45%;
+margin-bottom:20px;
+}
+
+}
+/* ================= Laptop ================= */
+
+@media (max-width:1200px){
+
+.container{
+width:95%;
+}
+
+.menu a{
+font-size:18px;
+}
+
+.main-img{
+width:350px;
+height:350px;
+}
+
+.gallery-preview{
+width:80%;
+}
+
+.footer-box{
+width:23%;
+}
 
 }
