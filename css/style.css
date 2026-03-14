@@ -8,6 +8,13 @@ display:flex;
 align-items:center;
 }
 
+@media  screen and (max-width:600px) {
+  .navbar{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .nav-logo {
   width: 60px;
   height: 60px;
@@ -47,7 +54,12 @@ align-items:center;
   color: yellow
 }
 
-
+.active {
+  background-color: #f1c40f;
+  color: black !important;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
 
 .nav-clock {
   display: flex;
@@ -72,7 +84,7 @@ align-items:center;
 }
 
 
-
+/*dark mode */
 
 
 
